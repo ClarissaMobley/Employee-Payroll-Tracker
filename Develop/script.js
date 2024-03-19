@@ -6,8 +6,14 @@ const collectEmployees = function() {
   // Get user input to create and return an array of employee objects
   let employeeInput = [];
   let addEmployee = true;
-
-
+  while (addEmployee) {
+    const firstName = window.prompt("First Name:");
+    const lastName = window.prompt("Last Name:");
+    const salary = window.prompt("Salary:");
+  }
+    if (isNaN(salary)) {
+      salary=0;
+    }
 }
 
 
