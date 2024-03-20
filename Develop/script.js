@@ -10,16 +10,16 @@ const collectEmployees = function() {
   while (addEmployee) {
     const addFirstName = window.prompt("Employee First Name:");
     const addLastName = window.prompt("Employee Last Name:");
-    const addSalary = window.prompt("Employee Salary:");
+    let addSalary = window.prompt("Employee Salary:");
   }
-    if (isNaN(salary)) {
-      salary == 0;
+    if (isNaN(addSalary)) {
+      addSalary = 0;
     }
 
     let employeeInput = {
-      addFirstName: addFirstName,
-      addLastName: addLastName,
-      addSalary: addSalary,
+      firstName: addFirstName,
+      lastName: addLastName,
+      salary: addSalary,
     }
 
     employeeAdd.push(employeeInput)
@@ -32,6 +32,9 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   let sum = 0;
+  for (workers of employeesArray) {
+    sum + workers.salary;
+  }
 }
 
 // Select a random employee
