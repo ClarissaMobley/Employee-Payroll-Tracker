@@ -12,15 +12,19 @@ const collectEmployees = function() {
     const addLastName = window.prompt("Employee Last Name:");
     const addSalary = window.prompt("Employee Salary:");
   }
-    else if (addFirstName === null){
-      break;
+    if (isNaN(salary)) {
+      salary === null;
     }
-    else if (addLastName === null){
-      break;
+
+    let employeeInput = {
+      addFirstName: addFirstName,
+      addLastName: addLastName,
+      addSalary: addSalary,
     }
-    else if (isNaN(salary)) {
-      salary === 0;
-    }
+
+    employeeAdd.push(employeeInput)
+
+    return employeeAdd;
 }
 
 
