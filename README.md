@@ -6,6 +6,7 @@ I created this project with Javascript to showcase the use of functions and vari
 
 ## Screenshots
 
+[Employee Payroll Tracker.pdf](https://github.com/ClarissaMobley/Employee-Payroll-Tracker/files/14669692/Employee.Payroll.Tracker.pdf)
 
 
 ## Authors
