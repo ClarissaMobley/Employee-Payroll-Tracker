@@ -7,12 +7,12 @@ const collectEmployees = function() {
   let employeeInput = [];
   let addEmployee = true;
   while (addEmployee) {
-    const firstName = window.prompt("First Name:");
-    const lastName = window.prompt("Last Name:");
-    const salary = window.prompt("Salary:");
+    const addFirstName = window.prompt("Employee First Name:");
+    const addLastName = window.prompt("Employee Last Name:");
+    const addSalary = window.prompt("Employee Salary:");
   }
     if (isNaN(salary)) {
-      salary=0;
+      salary === 0;
     }
 }
 
