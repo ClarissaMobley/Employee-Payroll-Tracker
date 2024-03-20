@@ -43,7 +43,8 @@ const displayAverageSalary = function(employeesArray) {
   // Calculate the average salary
   const averageSalary = sum / employeesArray.length;
 
-  console.log(`Average Salary: ${averageSalary.toFixed(2)}`);
+
+  console.log(`Average Salary: ${averageSalary.toLocaleString("en-US", { style: "currency", currency: "USD" })}`);
   console.log(`Number of Employees: ${employeesArray.length}`);
 
 }
