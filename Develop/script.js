@@ -13,7 +13,7 @@ const collectEmployees = function() {
     const addSalary = window.prompt("Employee Salary:");
   }
     if (isNaN(salary)) {
-      salary === null;
+      salary == 0;
     }
 
     let employeeInput = {
@@ -24,14 +24,14 @@ const collectEmployees = function() {
 
     employeeAdd.push(employeeInput)
 
-    return employeeAdd;
+  return employeeAdd;
 }
 
 
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
+  let sum = 0;
 }
 
 // Select a random employee
