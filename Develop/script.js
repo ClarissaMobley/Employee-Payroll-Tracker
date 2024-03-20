@@ -12,21 +12,26 @@ const collectEmployees = function() {
     const addLastName = window.prompt("Employee Last Name:");
     let addSalary = window.prompt("Employee Salary:");
   
+    // Added conditional with isNAN for salary
     if (isNaN(addSalary)) {
       addSalary = 0;
     }
 
+    // Add employee input
     let employeeInput = {
       firstName: addFirstName,
       lastName: addLastName,
       salary: addSalary,
     }
 
+    // Added push to add value to end of array
     employeeAdd.push(employeeInput)
 
+    // Added confirm window to end or continue loop
     addEmployee = window.confirm("Do you want to add another employee?");
   
   }
+  // added return so loop can close
   return employeeAdd;
 }
 
@@ -36,6 +41,7 @@ const collectEmployees = function() {
 const displayAverageSalary = function(employeesArray) {
   let sum = 0;
 
+  // Added calculate sum
   for (let worker of employeesArray) {
     sum += worker.salary;
   }
@@ -53,6 +59,7 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   
+  // Added Math function to create random pull
   const ranEmp = Math.floor(Math.random() * employeesArray.length);
   console.log(`Congratulations to ${employeesArray[ranEmp].firstName} ${employeesArray[ranEmp].lastName} our random drawing winner!`)
 }
