@@ -20,6 +20,6 @@ I created this project with Javascript to showcase the use of functions and vari
 
 JavaScript
 ## 🔗 Links
-[![website](https://img.shields.io/badge/webbsite-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+[![website](https://img.shields.io/badge/webbsite-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://clarissamobley.github.io/Employee-Payroll-Tracker/)
 
 
