@@ -24,6 +24,9 @@ const collectEmployees = function() {
 
     employeeAdd.push(employeeInput)
 
+    addEmployee = window.confirm("Do you want to add another employee?");
+
+
   return employeeAdd;
 }
 
@@ -32,9 +35,17 @@ const collectEmployees = function() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   let sum = 0;
-  for (workers of employeesArray) {
-    sum + workers.salary;
+
+  for (let worker of employeesArray) {
+    sum += worker.salary;
   }
+
+  // Calculate the average salary
+  const averageSalary = sum / employeesArray.length;
+
+  console.log(`Average Salary: ${averageSalary.toFixed(2)}`);
+  console.log(`Number of Employees: ${employeesArray.length}`);
+
 }
 
 // Select a random employee
