@@ -50,7 +50,7 @@ const displayAverageSalary = function(employeesArray) {
 
   // Log average salary and number of emplyees
   // Make currency in USD
-  console.log(`Average Salary: ${averageSalary.toLocaleString("en-US", { style: "currency", currency: "USD" })}`);
+  console.log(`Average Salary: ${averageSalary.toLocaleString}`);
   console.log(`Number of Employees: ${employeesArray.length}`);
 
 }
