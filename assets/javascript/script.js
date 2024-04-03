@@ -10,22 +10,21 @@ const collectEmployees = function() {
   while (addEmployee) {
     const addFirstName = window.prompt("Employee First Name:");
     const addLastName = window.prompt("Employee Last Name:");
-    let addSalary = parseInt (window.prompt("Employee Salary:"));
+    let addSalary = parseInt(window.prompt("Employee Salary:"));
   
-    // Added conditional with isNAN for salary
-    if (isNaN(addSalary)) {
-      addSalary = 0;
-    }
+  if (isNaN(addSalary)) {
+    addSalary = 0;
+  }
 
-    // Add employee input
-    let employeeInput = {
-      firstName: addFirstName,
-      lastName: addLastName,
-      salary: addSalary,
-    }
+  // Add employee input
+  let employeeInput = {
+    firstName: addFirstName,
+    lastName: addLastName,
+    salary: addSalary,
+  }
 
-    // Added push to add value to end of array
-    employeeAdd.push(employeeInput)
+  // Added push to add value to end of array
+  employeeAdd.push(employeeInput)
 
     // Added confirm window to end or continue loop
     addEmployee = window.confirm("Do you want to add another employee?");
