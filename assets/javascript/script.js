@@ -41,6 +41,8 @@ const displayAverageSalary = function(employeesArray) {
   let sum = 0;
 
   // Added calculate sum
+  let sum = 0;
+
   for (let worker of employeesArray) {
     sum += worker.salary;
   }
@@ -48,9 +50,9 @@ const displayAverageSalary = function(employeesArray) {
   // Calculate the average salary
   const averageSalary = sum / employeesArray.length;
 
-  // Log average salary and number of emplyees
+  // Log average salary and number of employees
   // Make currency in USD
-  console.log(`Average Salary: ${averageSalary.toLocaleString}`);
+  console.log(`Average Salary: ${averageSalary.toLocaleString("en-US", {style: "currency",currency: "USD"})}`);
   console.log(`Number of Employees: ${employeesArray.length}`);
 
 }
